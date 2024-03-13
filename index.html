@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body onload="initialLoad()">
+    <section class="message-area">
+        <div class="container">
+            <div class="chat-area">
+                <!-- chatbox -->
+                <div class="chatbox">
+                    <div class="modal-dialog-scrollable">
+                        <div class="modal-content">
+
+                            <div id="js-landing" class="landing">
+                                <div class="card border border-0 user-details-card">
+                                    <div class="card-body text-center">
+                                        <img src="./image/2f1b35a213782a95becab532c913b65e.png"
+                                            class="card-img-top mb-3" alt="user" />
+                                        <h1 class="card-title py-2">Jhon Smith</h1>
+                                        <p class="card-text">
+                                            Simple platform that lets you master what great managers do best,
+                                            as develop trust, collaborate, and drive team performance.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card border border-0 pt-1">
+                                    <div class="card-body tag-card-body">
+                                        <button type="button" class="btn btn-success mb-3 px-3 border-0 tag-button"
+                                            onclick="handelTagClick('First Principle thinking')">
+                                            First Principle thinking
+                                        </button>
+                                        <button type="button" class="btn btn-success mb-3 px-3 border-0 tag-button"
+                                            onclick="handelTagClick('super app concept')">
+                                            super app concept
+                                        </button>
+                                        <button type="button" class="btn btn-success mb-3 px-3 border-0 tag-button"
+                                            onclick="handelTagClick('life at foo')">
+                                            life at foo
+                                        </button>
+                                        <button type="button" class="btn btn-success mb-3 px-3 border-0 tag-button"
+                                            onclick="handelTagClick('super app concept')">
+                                            super app concept
+                                        </button>
+                                        <button type="button" class="btn btn-success mb-3 px-3 border-0 tag-button"
+                                            onclick="handelTagClick('super app concept')">
+                                            super app concept
+                                        </button>
+                                        <button type="button" class="btn btn-success mb-3 px-3 border-0 tag-button"
+                                            onclick="handelTagClick('life at jio')">
+                                            life at jio
+                                        </button>
+                                        <button type="button" class="btn btn-success mb-3 px-3 border-0 tag-button"
+                                            onclick="handelTagClick('super app concept')">
+                                            super app concept
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div id="js-msg-content" class="d-none"> -->
+                            <div id="js-msg-head" class="msg-head d-none">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <img class="img-fluid"
+                                                    src="./image/2f1b35a213782a95becab532c913b65e.png" alt="user img">
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">
+                                                <h3>Jhon Smith</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <button type="button" class="btn btn-success mb-3 px-3 border-0 ">
+                                            Get Services
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="js-msg-body" class="modal-body d-none">
+                                <div class="msg-body">
+                                    <ul id="message-box">
+                                        <!-- <li class="sender">
+                                                <p> Hey, Are you there? </p>
+                                            </li>
+                                            <li class="repaly">
+                                                <p>yes! wtytrtu
+                                                    yerureureyeru weyew yyweywe y ewy ew y wey ew y ew ywe y ew y ewy ew
+                                                    ywe y ewy we y we yyweyweweyew ywe yweewyyew y wey
+                                                </p>
+                                            </li>
+                                                -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- </div> #F26522 -->
+
+                            <div class="send-box">
+                                <input type="text" id="js-message-send" class="form-control" aria-label="message…"
+                                    placeholder="Chat with jhon smith">
+                                <button id="js-input-send" class="" disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 60 60"
+                                        fill="none">
+                                        <rect class="react" x="0.5" y="0.5" width="59" height="59" rx="7.5"
+                                            fill="#939393" />
+                                        <rect x="0.5" y="0.5" width="59" height="59" rx="7.5" stroke="#E1E1E1" />
+                                        <path
+                                            d="M25.4938 19.5063C25.4938 20.4396 26.2438 21.1729 27.1604 21.1729H36.4771L18.3271 39.3229C17.6771 39.9729 17.6771 41.0229 18.3271 41.6729C18.9771 42.3229 20.0271 42.3229 20.6771 41.6729L38.8271 23.5229V32.8396C38.8271 33.7563 39.5771 34.5063 40.4938 34.5063C41.4104 34.5063 42.1604 33.7563 42.1604 32.8396V19.5063C42.1604 18.5896 41.4104 17.8396 40.4938 17.8396H27.1604C26.2438 17.8396 25.4938 18.5896 25.4938 19.5063Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- chatbox -->
+        </div>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
